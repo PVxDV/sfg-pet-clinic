@@ -1,4 +1,4 @@
-package pvxdv.srpingframework.sfgpetclinic.model;
+package pvxdv.springfamework.sfgpetclinic.model;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package pvxdv.srpingframework.sfgpetclinic;
+package pvxdv.springfamework.sfgpetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
