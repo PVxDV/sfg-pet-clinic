@@ -44,10 +44,9 @@
     </build>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com:PVxDV/sfg-pet-clinic.git</connection>
+       <connection>scm:git:ssh://git@github.com:PVxDV/sfg-pet-clinic.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:PVxDV/sfg-pet-clinic.git</developerConnection>
-        <url>https://github.com/PVxDV/sfg-pet-clinic/tree/master</url>
-      <tag>sfg-pet-clinic-0.0.1</tag>
+       <url>https://github.com/PVxDV/sfg-pet-clinic/tree/master</url>
   </scm>
 
 </project>
