@@ -4,7 +4,7 @@
 
     <groupId>pvxdv.srpingframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -44,11 +44,13 @@
     </build>
 
     <scm>
-       <connection>scm:https://github.com/PVxDV/sfg-pet-clinic.git</connection>
-        <developerConnection>scm:https://github.com/PVxDV/sfg-pet-clinic.git</developerConnection>
-<!--       <url>https://github.com/PVxDV/sfg-pet-clinic/tree/master</url>-->
-        <url>https://github.com/PVxDV/sfg-pet-clinic.git</url>
-    <tag>sfg-pet-clinic-0.0.1</tag>
+<!--       <connection>scm:https://github.com/PVxDV/sfg-pet-clinic.git</connection>-->
+<!--        <developerConnection>scm:https://github.com/PVxDV/sfg-pet-clinic.git</developerConnection>-->
+<!--&lt;!&ndash;       <url>https://github.com/PVxDV/sfg-pet-clinic/tree/master</url>&ndash;&gt;-->
+<!--        <url>https://github.com/PVxDV/sfg-pet-clinic.git</url>-->
+<!--    <tag>sfg-pet-clinic-0.0.1</tag>-->
+        <developerConnection>scm:git:https://github.com/PVxDV/sfg-pet-clinic.git</developerConnection>
+
   </scm>
 
 </project>
