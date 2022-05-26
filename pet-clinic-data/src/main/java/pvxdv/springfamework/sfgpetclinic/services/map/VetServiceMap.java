@@ -1,11 +1,11 @@
 package pvxdv.springfamework.sfgpetclinic.services.map;
 
 import pvxdv.springfamework.sfgpetclinic.model.Vet;
-import pvxdv.springfamework.sfgpetclinic.services.CrudService;
+import pvxdv.springfamework.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceOwner extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
