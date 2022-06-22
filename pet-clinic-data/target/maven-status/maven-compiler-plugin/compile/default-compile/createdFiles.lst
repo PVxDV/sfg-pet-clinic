@@ -1,5 +1,14 @@
 pvxdv\springfamework\sfgpetclinic\model\Pet.class
-pvxdv\springfamework\sfgpetclinic\model\PetType.class
-pvxdv\springfamework\sfgpetclinic\model\Person.class
-pvxdv\springfamework\sfgpetclinic\model\Vet.class
+pvxdv\springfamework\sfgpetclinic\services\map\AbstractMapService.class
+pvxdv\springfamework\sfgpetclinic\services\OwnerService.class
+pvxdv\springfamework\sfgpetclinic\services\CrudService.class
 pvxdv\springfamework\sfgpetclinic\model\Owner.class
+pvxdv\springfamework\sfgpetclinic\services\map\OwnerServiceMap.class
+pvxdv\springfamework\sfgpetclinic\services\VetService.class
+pvxdv\springfamework\sfgpetclinic\services\map\VetServiceMap.class
+pvxdv\springfamework\sfgpetclinic\model\BaseEntity.class
+pvxdv\springfamework\sfgpetclinic\services\map\PetServiceMap.class
+pvxdv\springfamework\sfgpetclinic\model\Person.class
+pvxdv\springfamework\sfgpetclinic\services\PetService.class
+pvxdv\springfamework\sfgpetclinic\model\PetType.class
+pvxdv\springfamework\sfgpetclinic\model\Vet.class
