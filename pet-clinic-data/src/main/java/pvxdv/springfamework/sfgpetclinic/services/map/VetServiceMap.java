@@ -1,13 +1,21 @@
 package pvxdv.springfamework.sfgpetclinic.services.map;
 
 import org.springframework.stereotype.Service;
+import pvxdv.springfamework.sfgpetclinic.model.Specialty;
 import pvxdv.springfamework.sfgpetclinic.model.Vet;
+import pvxdv.springfamework.sfgpetclinic.services.SpecialtyService;
 import pvxdv.springfamework.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+
+    private final SpecialtyService specialtyService;
+
+    public VetServiceMap(SpecialtyService specialtyService) {
+        this.specialtyService = specialtyService;
+    }
 
     @Override
     public Set<Vet> findAll() {
@@ -21,6 +29,14 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet vet) {
+        if(vet.getSpecialities().size() > 0) {
+            vet.getSpecialities().forEach(specialty -> {
+                if(specialty.getId() == null) {
+                    Specialty savedSpecialty = specialtyService.save(specialty);
+                    specialty.setId(savedSpecialty.getId());
+                }
+            });
+        }
         return super.save(vet);
     }
 
