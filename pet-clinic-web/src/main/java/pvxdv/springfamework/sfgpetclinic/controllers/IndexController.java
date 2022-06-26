@@ -11,4 +11,14 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping("/oups")
+    public String oups() {
+        return "notImplemented";
+    }
+
+    @RequestMapping("/vets.html")
+    public String vets() {
+        return "notImplemented";
+    }
+
 }
