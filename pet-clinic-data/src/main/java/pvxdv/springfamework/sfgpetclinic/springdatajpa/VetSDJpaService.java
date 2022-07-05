@@ -3,7 +3,6 @@ package pvxdv.springfamework.sfgpetclinic.springdatajpa;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import pvxdv.springfamework.sfgpetclinic.model.Vet;
-import pvxdv.springfamework.sfgpetclinic.repositories.SpecialtyRepository;
 import pvxdv.springfamework.sfgpetclinic.repositories.VetRepository;
 import pvxdv.springfamework.sfgpetclinic.services.VetService;
 
