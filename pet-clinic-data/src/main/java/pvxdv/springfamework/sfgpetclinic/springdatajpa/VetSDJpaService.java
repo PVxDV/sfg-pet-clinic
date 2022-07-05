@@ -15,11 +15,9 @@ import java.util.Set;
 public class VetSDJpaService implements VetService {
 
     private final VetRepository vetRepository;
-    private final SpecialtyRepository specialtyRepository;
 
-    public VetSDJpaService(VetRepository vetRepository, SpecialtyRepository specialtyRepository) {
+    public VetSDJpaService(VetRepository vetRepository) {
         this.vetRepository = vetRepository;
-        this.specialtyRepository = specialtyRepository;
     }
 
     @Override
