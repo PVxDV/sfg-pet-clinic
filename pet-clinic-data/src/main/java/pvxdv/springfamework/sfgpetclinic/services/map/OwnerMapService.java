@@ -1,5 +1,6 @@
 package pvxdv.springfamework.sfgpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import pvxdv.springfamework.sfgpetclinic.model.Owner;
 import pvxdv.springfamework.sfgpetclinic.model.Pet;
@@ -10,6 +11,7 @@ import pvxdv.springfamework.sfgpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;

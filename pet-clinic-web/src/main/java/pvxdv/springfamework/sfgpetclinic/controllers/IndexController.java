@@ -15,10 +15,4 @@ public class IndexController {
     public String oups() {
         return "notImplemented";
     }
-
-    @RequestMapping("/vets.html")
-    public String vets() {
-        return "notImplemented";
-    }
-
 }
