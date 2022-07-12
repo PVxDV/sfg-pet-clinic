@@ -8,6 +8,7 @@ import pvxdv.springfamework.sfgpetclinic.services.OwnerService;
 import pvxdv.springfamework.sfgpetclinic.services.PetService;
 import pvxdv.springfamework.sfgpetclinic.services.PetTypeService;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Service
@@ -71,6 +72,11 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findByLastName(String lastName) {
+        for(Owner owner : new HashSet<>(this.findAll())) {
+            if(owner.getLastName().equalsIgnoreCase(lastName)) {
+                return owner;
+            }
+        }
         return null;
     }
 }
