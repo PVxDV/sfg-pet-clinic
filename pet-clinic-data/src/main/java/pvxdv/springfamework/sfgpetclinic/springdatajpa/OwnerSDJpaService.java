@@ -9,6 +9,7 @@ import pvxdv.springfamework.sfgpetclinic.repositories.PetTypeRepository;
 import pvxdv.springfamework.sfgpetclinic.services.OwnerService;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -29,6 +30,11 @@ public class OwnerSDJpaService implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {
         return ownerRepository.findByLastName(lastName);
+    }
+
+    @Override
+    public List<Owner> findByLastNameLike(String lastName) {
+        return ownerRepository.findByLastNameLike(lastName);
     }
 
     @Override

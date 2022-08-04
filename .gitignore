@@ -19,37 +19,6 @@ npm-debug.log.*
 .sass-cache/
 
 ######################
-# Eclipse
-######################
-*.pydevproject
-.project
-.metadata
-tmp/
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
-.factorypath
-/src/main/resources/rebel.xml
-
-# External tool builders
-.externalToolBuilders/**
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-######################
 # Intellij
 ######################
 .idea/
@@ -69,12 +38,6 @@ local.properties
 ######################
 /log/
 /target/
-
-######################
-# Gradle
-######################
-.gradle/
-/build/
 
 ######################
 # Package Files
@@ -142,5 +105,7 @@ Desktop.ini
 ######################
 # Target
 ######################
-/pet-clinic-data/target/
-/pet-clinic-web/target/
+/pet-clinic-data/target
+/pet-clinic-web/target
+/.idea
+/.mvn
