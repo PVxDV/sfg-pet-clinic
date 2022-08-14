@@ -1,6 +1,5 @@
 package pvxdv.springfamework.sfgpetclinic.controllers;
 
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,7 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 import pvxdv.springfamework.sfgpetclinic.model.Owner;
 import pvxdv.springfamework.sfgpetclinic.services.OwnerService;
 
-import javax.naming.Binding;
 import java.util.List;
 
 @RequestMapping("/owners")
@@ -45,7 +43,7 @@ public class OwnerController {
         }
 
         // find owners by last name
-        List<Owner> results = ownerService.findByLastNameLike(owner.getLastName());
+        List<Owner> results = ownerService.findByLastNameLike("%" + owner.getLastName() + "%");
 
         if (results.isEmpty()) {
             // no owners found
@@ -58,7 +56,7 @@ public class OwnerController {
         } else {
             // multiple owners found
             model.addAttribute("selections", results);
-            return "owners/ownersList";
+            return "/owners/ownersList";
         }
     }
 
