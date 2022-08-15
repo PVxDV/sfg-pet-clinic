@@ -19,7 +19,6 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 
@@ -59,7 +58,7 @@ class OwnerControllerTest {
 
     @Test
     void processFindFromReturnMany() throws Exception {
-        when(ownerService.findByLastNameLike(anyString())).
+        when(ownerService.findAllByLastNameLike(anyString())).
                 thenReturn(Arrays.asList(Owner.builder().id(1L).build(),
                         Owner.builder().id(2L).build()));
 
@@ -71,7 +70,7 @@ class OwnerControllerTest {
 
     @Test
     void processFindFromReturnOne() throws Exception {
-        when(ownerService.findByLastNameLike(anyString())).thenReturn(Arrays.asList(Owner.builder().id(1L).build()));
+        when(ownerService.findAllByLastNameLike(anyString())).thenReturn(Arrays.asList(Owner.builder().id(1L).build()));
 
         mockMvc.perform(get("/owners"))
                 .andExpect(status().is3xxRedirection())
